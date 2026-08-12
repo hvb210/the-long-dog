@@ -19,12 +19,17 @@ export default function HistoryScreen() {
           No hot dogs logged yet.
         </Text>
       ) : (
-        logEntries.map((entry) => {
-          const product = hotdogs
-            .flatMap((brand) => brand.products)
-            .find(
-              (product) => product.id === entry.productId
-            );
+        [...logEntries]
+          .sort(
+            (a, b) =>
+              new Date(b.date).getTime() - new Date(a.date).getTime()
+            )
+            .map((entry) => {
+              const product = hotdogs
+              .flatMap((brand) => brand.products)
+              .find(
+                (product) => product.id === entry.productId
+              );
 
           return (
             <View

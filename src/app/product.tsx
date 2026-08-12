@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Pressable } from "react-native";
+import { StyleSheet, Text, View, Pressable, ScrollView } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { hotdogs } from "@/data/hotdogs";
 
@@ -11,7 +11,7 @@ export default function ProductScreen() {
   );
 
   return (
-    <View style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>
         {selectedBrand?.name}
       </Text>
@@ -39,16 +39,16 @@ export default function ProductScreen() {
           </Text>
         </Pressable>
       ))}
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     alignItems: "center",
-    justifyContent: "center",
     padding: 20,
+    paddingTop: 80,
+    paddingBottom: 40,
   },
 
   title: {

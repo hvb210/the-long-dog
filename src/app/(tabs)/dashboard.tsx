@@ -83,7 +83,7 @@ const badges = achievements.map((achievement) => ({
       </Text>
 
       <Text style={styles.value}>
-        {(goalInches / 63360).toFixed(1)} Mile Goal
+        {(goalInches / 63360).toFixed(3)} Mile Goal
       </Text>
 
       <Pressable

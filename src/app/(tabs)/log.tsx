@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Pressable } from "react-native";
+import { StyleSheet, Text, View, Pressable, ScrollView } from "react-native";
 import { useRouter } from "expo-router";
 import { hotdogs } from "@/data/hotdogs";
 import { useApp } from "@/context/AppContext";
@@ -9,7 +9,7 @@ export default function LogScreen() {
   const { customHotDogs, deleteCustomHotDog } = useApp();
 
   return (
-    <View style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>
         What did you eat?
       </Text>
@@ -81,16 +81,15 @@ export default function LogScreen() {
         </Text>
         </Pressable>
 
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     alignItems: "center",
-    justifyContent: "center",
     padding: 20,
+    paddingBottom: 40,
   },
 
   title: {
