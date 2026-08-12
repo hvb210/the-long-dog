@@ -8,7 +8,7 @@
     "scheme": "the-long-dog",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon",
+      "icon": "./assets/images/long_dog_icon.png",
       "bundleIdentifier": "com.hvb210.thelongdog",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
