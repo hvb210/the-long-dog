@@ -5,10 +5,14 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/long_dog_icon.png",
-    "scheme": "frankfooter",
+    "scheme": "the-long-dog",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.hvb210.thelongdog",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -41,8 +45,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "aa8a3ae7-6a78-4a78-84d2-a53c4fa158ee"
+        "projectId": "bf2a87c3-63e0-44b5-824a-b2f7ff761880"
       }
-    }
+    },
+    "owner": "hvb210"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "frankfooter",
+  "name": "the-long-dog",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "dependencies": {
@@ -8,6 +8,7 @@
     "@react-navigation/bottom-tabs": "^7.18.14",
     "expo": "~54.0.0",
     "expo-constants": "~18.0.13",
+    "expo-dev-client": "~6.0.21",
     "expo-device": "~8.0.10",
     "expo-font": "~14.0.12",
     "expo-glass-effect": "~0.1.10",
