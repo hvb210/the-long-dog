@@ -6,9 +6,18 @@ export default function RootLayout() {
     <AppProvider>
       <Stack
         screenOptions={{
-          headerShown: false,
+          headerShown: true,
+          headerBackButtonDisplayMode: "minimal",
+          headerTitle: ""
         }}
+      >
+      <Stack.Screen
+          name="(tabs)"
+          options={{
+            headerShown: false,
+          }}
       />
+    </Stack>
     </AppProvider>
   );
 }
